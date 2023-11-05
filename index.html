@@ -1,193 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minotauro</title>
-   
+
     <!--Icons na aba-->
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
 
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Botsstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="style.css">
-
-
-</head>
-<body>
-   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--Cabeçalho e Banner-->
     <header id="header">
-        <div id="inner-header">
-            <h2 id="brand">Minotauro</h2>
-            <nav id="navbar">
-                <a href="#header">HOME</a>
-                <a href="#products">PRODUTOS</a>
-                <a href="#about">QUEM SOMOS</a>
-                <a href="#work">TRABALHO</a>
-                <a href="#contact">CONTATO</a>
-                <a href= "login.html">LOGIN</a>
-            </nav>
-            
-            <!--Menu Mobile (Celular)-->
-
-        </div>
+      <div id="inner-header">
        
-        <!--Banners-->
-        <div class="banner active">
-            <h2>Os melhores Produtos esportivos</h2>
-            <p>Todos equipamentos parta melhorar seu desempenho esportivo</p>
+       <!--Logo-->
+        <div class="logo"><img src="img/logo.png" alt="logo" /></div>
+      
+      <!--Barra de navegação-->
+        <div class="navbar-bottom">
+          <nav id="navbar">
+            <a href="#header">HOME</a>
+            <a href="#products">PRODUTOS</a>
+            <a href="#about">QUEM SOMOS</a>
+            <a href="#work">TRABALHO</a>
+            <a href="#contact">CONTATO</a>
+            <a href="login.html">LOGIN</a>
+          </nav>
         </div>
-     
-       <!--Linhas de referencia para Banners-->
-        <div class="dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
+
+        <!--Menu Mobile (Celular)-->
+      </div>
+
+      <!--Banners-->
+      <div class="banner active">
+        <h2>Os melhores Produtos esportivos</h2>
+        <p>Todos equipamentos parta melhorar seu desempenho esportivo</p>
+      </div>
+
+      <!--Linhas de referencia para Banners-->
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
     </header>
 
     <!--Produtos-->
 
-    <main>
+    <main class="container">
       <h2 id="product-title">Produtos</h2>
-        <div id="other-products">
-
-            <!--Camisa Palmeiras-->
-            <div class="product">
-            <img src="img/SEP.webp" alt="Uniforme Palmeiras 2023">
-            <div class="product-info">
-                <h4>Uniforme Palmeiras 2023</h4>
-              <a href="https://www.netshoes.com.br/camisa-palmeiras-i-2324-
-              sn-jogador-puma-masculina-verde+escuro-2I3-7587-810" 
-              class="btn">Compre Aqui</a>
-            </div>
-          </div>
-
-          <!--Camisa Corinthians-->
-          <div class="product">
-            <img src="img/SCCP.webp" alt="Uniforme Corinthians-- 2023">         
-            <div class="product-info">
-                <h4>Uniforme Corinthians 2023</h4>
-                <a href="https://www.netshoes.com.br/camisa-corinthians-iii-2324-
-                sn-torcedor-nike-masculina-preto+dourado-JD8-3972-120" 
-                class="btn">Compre Aqui</a>
-            </div>
-          </div>
-
-          <!--Camisa Juventus-->
-          <div class="product">
-            <img src="img/JUV.webp" alt="Uniforme Juventus 2023">
-            <div class="product-info">
-                <h4>Uniforme Juventus Feminino 2023</h4>           
-                <a href="https://www.netshoes.com.br/camisa-juventus-mooca-i-
-                2223-sn-torcedor-adidas-feminina-grena-FB8-4443-054" 
-                class="btn">Compre Aqui</a>
-            </div>
+      <div id="other-products">
+        <!--Camisa Palmeiras-->
+        <div class="product">
+          <img src="img/SEP.webp" alt="Uniforme Palmeiras 2023" />
+          <div class="product-info">
+            <h4>Uniforme Palmeiras 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-palmeiras-i-2324-
+              sn-jogador-puma-masculina-verde+escuro-2I3-7587-810"
+              class="btn"
+              >Compre Aqui</a
+            >
           </div>
         </div>
 
-        <!--Segunda fileira de produto-->
-
-        <div id="other-products">
-
-            <!--Camisa Real Madrid-->
-            <div class="product">
-            <img src="img/RMA.webp" alt="Uniforme RMA 2023">
-            <div class="product-info">
-                <h4>Uniforme Real Madrid 2023</h4>
-              <a href="https://www.netshoes.com.br/camisa-real-madrid-home-2223-sn-
-              torcedor-adidas-masculina-branco-3ZP-7305-014" 
-              class="btn">Compre Aqui</a>
-            </div>
-          </div>
-
-          <!--Camisa Gremio-->
-          <div class="product">
-            <img src="img/GRE.webp" alt="Uniforme Gremio 2023">         
-            <div class="product-info">
-                <h4>Uniforme Gremio 2023</h4>
-                <a href="https://www.netshoes.com.br/camisa-masculina-umbro-
-                gremio-of3-2023-classic-sn-preto-2IA-7482-006" 
-                class="btn">Compre Aqui</a>
-            </div>
-          </div>
-
-          <!--Camisa Flamengo-->
-          <div class="product">
-            <img src="img/FLA.webp" alt="Uniforme Flamengo 2023">
-            <div class="product-info">
-                <h4>Uniforme Flamengo 2023</h4>           
-                <a href="https://www.netshoes.com.br/camisa-3-cr-
-                flamengo-2324-adidas-preto-FB9-1717-006" 
-                class="btn">Compre Aqui</a>
-            </div>
+        <!--Camisa Corinthians-->
+        <div class="product">
+          <img src="img/SCCP.webp" alt="Uniforme Corinthians-- 2023" />
+          <div class="product-info">
+            <h4>Uniforme Corinthians 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-corinthians-iii-2324-
+                sn-torcedor-nike-masculina-preto+dourado-JD8-3972-120"
+              class="btn"
+              >Compre Aqui</a
+            >
           </div>
         </div>
 
-        <!--Terceira fileira de produto-->
-      
-        <div id="other-products">
-
-            <!--Camisa Fluminense-->
-            <div class="product">
-            <img src="img/FLU.webp" alt="Uniforme Fluminense 2023">
-            <div class="product-info">
-                <h4>Uniforme Fluminense 2023</h4>
-              <a href="https://www.netshoes.com.br/camisa-fluminense-i-2324-sn-torcedor-
-              umbro-masculina-verde+vinho-2IA-4991-410" 
-              class="btn">Compre Aqui</a>
-            </div>
-          </div>
-
-          <!--Camisa PSG-->
-          <div class="product">
-            <img src="img/PSG.webp" alt="Uniforme PSG 2023">         
-            <div class="product-info">
-                <h4>Uniforme PSG 2023</h4>
-                <a href="https://www.netshoes.com.br/camisa-nike-psg-i-
-                20222023-torcedor-pro-masculina-azul-2IC-9224-008" 
-                class="btn">Compre Aqui</a>
-            </div>
-          </div>
-
-          <!--Camisa Alemanha-->
-          <div class="product">
-            <img src="img/ALE.webp" alt="Uniforme Alemanha 2023">
-            <div class="product-info">
-                <h4>Uniforme Alemanha 2023</h4>           
-                <a href="https://www.netshoes.com.br/camisa-selecao-alemanha-home-2223-
-                sn-torcedor-adidas-masculina-branco-FB8-0732-014" 
-                class="btn">Compre Aqui</a>
-            </div>
+        <!--Camisa Juventus-->
+        <div class="product">
+          <img src="img/JUV.webp" alt="Uniforme Juventus 2023" />
+          <div class="product-info">
+            <h4>Uniforme Juventus Feminino 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-juventus-mooca-i-
+                2223-sn-torcedor-adidas-feminina-grena-FB8-4443-054"
+              class="btn"
+              >Compre Aqui</a
+            >
           </div>
         </div>
-    
+      </div>
+
+      <!--Segunda fileira de produto-->
+
+      <div id="other-products">
+        <!--Camisa Real Madrid-->
+        <div class="product">
+          <img src="img/RMA.webp" alt="Uniforme RMA 2023" />
+          <div class="product-info">
+            <h4>Uniforme Real Madrid 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-real-madrid-home-2223-sn-
+              torcedor-adidas-masculina-branco-3ZP-7305-014"
+              class="btn"
+              >Compre Aqui</a
+            >
+          </div>
+        </div>
+
+        <!--Camisa Gremio-->
+        <div class="product">
+          <img src="img/GRE.webp" alt="Uniforme Gremio 2023" />
+          <div class="product-info">
+            <h4>Uniforme Gremio 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-masculina-umbro-
+                gremio-of3-2023-classic-sn-preto-2IA-7482-006"
+              class="btn"
+              >Compre Aqui</a
+            >
+          </div>
+        </div>
+
+        <!--Camisa Flamengo-->
+        <div class="product">
+          <img src="img/FLA.webp" alt="Uniforme Flamengo 2023" />
+          <div class="product-info">
+            <h4>Uniforme Flamengo 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-3-cr-
+                flamengo-2324-adidas-preto-FB9-1717-006"
+              class="btn"
+              >Compre Aqui</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--Terceira fileira de produto-->
+
+      <div id="other-products">
+        <!--Camisa Fluminense-->
+        <div class="product">
+          <img src="img/FLU.webp" alt="Uniforme Fluminense 2023" />
+          <div class="product-info">
+            <h4>Uniforme Fluminense 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-fluminense-i-2324-sn-torcedor-
+              umbro-masculina-verde+vinho-2IA-4991-410"
+              class="btn"
+              >Compre Aqui</a
+            >
+          </div>
+        </div>
+
+        <!--Camisa PSG-->
+        <div class="product">
+          <img src="img/PSG.webp" alt="Uniforme PSG 2023" />
+          <div class="product-info">
+            <h4>Uniforme PSG 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-nike-psg-i-
+                20222023-torcedor-pro-masculina-azul-2IC-9224-008"
+              class="btn"
+              >Compre Aqui</a
+            >
+          </div>
+        </div>
+
+        <!--Camisa Alemanha-->
+        <div class="product">
+          <img src="img/ALE.webp" alt="Uniforme Alemanha 2023" />
+          <div class="product-info">
+            <h4>Uniforme Alemanha 2023</h4>
+            <a
+              href="https://www.netshoes.com.br/camisa-selecao-alemanha-home-2223-
+                sn-torcedor-adidas-masculina-branco-FB8-0732-014"
+              class="btn"
+              >Compre Aqui</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
 
-<main>teste</main>
-  
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-</body>
+    <main>teste</main>
+  </body>
 </html>
-
