@@ -1,13 +1,15 @@
 /*  Geral */
  /*  Variaveis para auxiliar o design do projeto */
 :root{
-    --main-color: #ffff00;
+    --main-color: #e9e9e9;
     --primary-text-color: #fff;
     --secondary-text-color: #000000;
-    --tertiary-text-color: #e4e4e4fff;
+    --tertiary-text-color: #d3d3d3;
     --secondary-color: #868686;
     --tertiary-color: #eff3f4;
-    --fourth-color: #e4e407;
+    --fourth-color: #bdbebd;
+    --btn-color: #d11507;
+    --secondary-btn-color: #a51b0b;
 }
 *{
     font-family: "Bebas Neue";
@@ -34,7 +36,7 @@ input[type="submit"]{
 /* Cabeçalho e Banner */
 #header{
     min-height: 90vh;
-    background-image: url("img/banner1.jpg");
+    background-image: url("img/banner1.png");
     background-size: cover;
     background-position: center;
     color: var(--primary-text-color);
@@ -182,23 +184,75 @@ opacity: 0;
   
 
 .btn{
+    border: solid;
+    border-radius: 35px;
     padding: 1.2rem 1.8rem;
     text-transform: uppercase;
     font-size: 1.4rem;
-    color: var(--secondary-text-color);
-    background-color: var(--main-color);
+    color: var(--main-color);
+    background-color: var(--btn-color);
     align-self: end;
     margin-bottom: 2.5rem;
 }
 
 .btn:hover{
     font-size: 1.8rem;
-    background-color: var(--fourth-color);
+    background-color: var(--secondary-btn-color);
     transition: 0.5s;
 }
 
+/*Sobre nós*/
 
+#about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
+#about-text{
+  background-image: url(../minotauro/img/sobrenosfundo.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-text-color);
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4 rem 3rem;
+
+}
+
+#about-text .section-subtitle {
+  padding: 3rem;
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+
+}
+
+.section {
+  color: var(--primary-text-color);
+  padding: 2rem;
+  font-size: 2rem;
+  padding: 4rem;
+}
+
+#about-text i {
+  font-size: 4rem;
+  margin-bottom: -2rem;
+  margin-left: 1rem;
+}
+
+.about-description {
+  margin-top: -6rem;
+  width: 60%;
+  padding: 5rem;
+  font-size: 1.35rem;
+}
 
 
 
