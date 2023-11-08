@@ -1,4 +1,5 @@
 /*  Geral */
+<<<<<<< HEAD
  /*  Variaveis para auxiliar o design do projeto */
 :root{
     --main-color: #e9e9e9;
@@ -10,30 +11,44 @@
     --fourth-color: #bdbebd;
     --btn-color: #d11507;
     --secondary-btn-color: #a51b0b;
+=======
+/*  Variaveis para auxiliar o design do projeto */
+:root {
+  --main-color: #e9e9e9;
+  --primary-text-color: #fff;
+  --secondary-text-color: #000000;
+  --tertiary-text-color: #d3d3d3;
+  --secondary-color: #868686;
+  --tertiary-color: #eff3f4;
+  --fourth-color: #bdbebd;
+  --btn-color: #d11507;
+  --secondary-btn-color: #a51b0b;
+>>>>>>> 7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
 }
-*{
-    font-family: "Bebas Neue";
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Bebas Neue";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Estilizando os links*/
-a{
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* Estilizando as imagens */
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
 /* Estilizando o botão de enivar do formulario */
-input[type="submit"]{
-    cursor: pointer;
+input[type="submit"] {
+  cursor: pointer;
 }
 
 /* Cabeçalho e Banner */
+<<<<<<< HEAD
 #header{
     min-height: 100vh;
     background-image: url("img/banner1.png");
@@ -50,17 +65,40 @@ input[type="submit"]{
     display: flex;
     justify-content: space-around;
     align-items: center;
+=======
+#header {
+  min-height: 90vh;
+  background-image: url("img/banner1.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-text-color);
+  margin-bottom: 2rem;
+  position: relative;
 }
 
+/* Cabeçalho interno*/
+#inner-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+>>>>>>> 7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
+}
 
 /*Logo*/
 
+<<<<<<< HEAD
+/*Logo*/
+
 .logo{
+=======
+.logo {
+>>>>>>> 7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
   width: 15%;
   height: auto;
 }
 
 /* Barra de navegação*/
+<<<<<<< HEAD
 #navbar{
     display: flex;
     gap: 2rem;
@@ -68,13 +106,27 @@ input[type="submit"]{
     margin-right: 2rem;
     gap: 2rem;
     
+=======
+#navbar {
+  display: flex;
+  gap: 2rem;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  gap: 2rem;
+>>>>>>> 7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
 }
 
 /* Estilizando os links da navbar */
-#navbar a{
-color: var(--primary-text-color);
-padding: 2rem;
-font-size: 1.5rem;
+#navbar a {
+  color: var(--primary-text-color);
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+#navbar a:hover {
+  font-size: 2rem;
+  transition: 0.8s;
+  color: var(--secondary-color);
 }
 
 #navbar a:hover{
@@ -85,10 +137,11 @@ font-size: 1.5rem;
 
 
 /* Textos do banner */
-.banner .active{
-opacity: 0;
+.banner .active {
+  opacity: 0;
 }
 
+<<<<<<< HEAD
 .banner{
     max-width: 50%;
     padding: 2%;
@@ -96,44 +149,52 @@ opacity: 0;
     position: absolute;
     transition: 0.6s;
     
+=======
+.banner {
+  max-width: 50%;
+  padding: 2%;
+  opacity: 1;
+  position: absolute;
+  transition: 0.6s;
+>>>>>>> 7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
 }
 
 /* Texto titulo do banner */
-.banner h2{
-    font-size: 4rem;
-    margin-bottom: 1.2rem;
-    padding: 4rem;
+.banner h2 {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+  padding: 4rem;
 }
 
 /* Textos legenda do banner */
-.banner p{
-    font-size: 1.5rem;
-    margin-left: 4rem;
-    margin-top: -4rem;
+.banner p {
+  font-size: 1.5rem;
+  margin-left: 4rem;
+  margin-top: -4rem;
 }
 
 /* Linhas de referencia para Banners */
 .dots {
-    display: flex;
-    gap: 2rem;
-    position: absolute;
-    bottom: 3rem;
-    left: 3rem;
-  }
-  
-  .dot {
-    width: 40px;
-    height: 5px;
-    background-color: var(--secondary-color);
-  }
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
 
-  .dot.active{
-    background-color: var(--main-color);
-  }
+.dot {
+  width: 40px;
+  height: 5px;
+  background-color: var(--secondary-color);
+}
+
+.dot.active {
+  background-color: var(--main-color);
+}
 
 /* Produtos */
 
-#product-title{
+#product-title {
   padding: 2rem 1.4rem;
   text-transform: uppercase;
   font-size: 5rem;
@@ -141,6 +202,7 @@ opacity: 0;
   margin-bottom: 2rem;
 }
 
+<<<<<<< HEAD
 .container{
   width: 100%;
   display: flex;
@@ -623,17 +685,109 @@ opacity: 0;
   padding-bottom: 1rem;
 }
 
+=======
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
+#other-products {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
 
+.product {
+  position: relative;
+  width: 25%;
+  height: auto;
+}
+>>>>>>> 7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
 
+.product-info {
+  background-color: var(--tertiary-color);
+  padding: 2rem 1.4rem;
+  min-height: 190px;
+  margin-top: -1rem;
+  z-index: 2;
+  position: relative;
+}
 
+.product h4 {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
 
+.btn {
+  border: solid;
+  border-radius: 35px;
+  padding: 1.2rem 1.8rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--main-color);
+  background-color: var(--btn-color);
+  align-self: end;
+  margin-bottom: 2.5rem;
+}
 
+.btn:hover {
+  font-size: 1.8rem;
+  background-color: var(--secondary-btn-color);
+  transition: 0.5s;
+}
 
+/*Sobre nós*/
 
+#about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
+#about-text {
+  color: var(--primary-text-color);
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4 rem 3rem;
+  background-image: url("img/sobrenosfundo.png");
+  background-size: cover;
+  background-position: center;
+}
 
+#about-text .section-subtitle {
+  padding: 3rem;
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+}
 
+.section {
+  color: var(--primary-text-color);
+  padding: 2rem;
+  font-size: 2rem;
+  padding: 4rem;
+}
+
+#about-text i {
+  font-size: 4rem;
+  margin-bottom: -2rem;
+  margin-left: 1rem;
+}
+
+<<<<<<< HEAD
 
 /*Responsividade*/
 
@@ -693,3 +847,11 @@ i {
 
 
 }
+=======
+.about-description {
+  margin-top: -6rem;
+  width: 60%;
+  padding: 5rem;
+  font-size: 1.35rem;
+}
+>>>>>>> 7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
