@@ -1,11 +1,15 @@
 /*  Geral */
  /*  Variaveis para auxiliar o design do projeto */
 :root{
-    --main-color: yellow;
+    --main-color: #e9e9e9;
     --primary-text-color: #fff;
     --secondary-text-color: #000000;
+    --tertiary-text-color: #d3d3d3;
     --secondary-color: #868686;
     --tertiary-color: #eff3f4;
+    --fourth-color: #bdbebd;
+    --btn-color: #d11507;
+    --secondary-btn-color: #a51b0b;
 }
 *{
     font-family: "Bebas Neue";
@@ -31,29 +35,29 @@ input[type="submit"]{
 
 /* Cabeçalho e Banner */
 #header{
-    min-height: 90vh;
-    background-image: url("img/banner1.jpg");
+    min-height: 100vh;
+    background-image: url("img/banner1.png");
     background-size: cover;
     background-position: center;
     color: var(--primary-text-color);
     margin-bottom: 2rem;
     position: relative; 
-    
+
 }
 
 /* Cabeçalho interno*/
 #inner-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 
-/* Titulo (Marca) */
-#brand{
-    font-size: 5rem;
-    
-    padding: 2rem;
+/*Logo*/
+
+.logo{
+  width: 15%;
+  height: auto;
 }
 
 /* Barra de navegação*/
@@ -62,7 +66,7 @@ input[type="submit"]{
     gap: 2rem;
     text-transform: uppercase;
     margin-right: 2rem;
-    gap: 4rem;
+    gap: 2rem;
     
 }
 
@@ -73,6 +77,13 @@ padding: 2rem;
 font-size: 1.5rem;
 }
 
+#navbar a:hover{
+  font-size: 2rem;
+  transition: 0.8s;
+  color: var(--secondary-color);
+}
+
+
 /* Textos do banner */
 .banner .active{
 opacity: 0;
@@ -80,7 +91,7 @@ opacity: 0;
 
 .banner{
     max-width: 50%;
-    padding: 4rem;
+    padding: 2%;
     opacity: 1;
     position: absolute;
     transition: 0.6s;
@@ -126,17 +137,32 @@ opacity: 0;
   padding: 2rem 1.4rem;
   text-transform: uppercase;
   font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  
 }
 
 #other-products {
     width: 100%;
+    height: auto;
     display: flex;
     gap: 2rem;
     padding: 2rem;
+    justify-content: center;
   }
   
   .product {
     position: relative;
+    width: 25%;
+    height: auto;
   }
   
   .product-info {
@@ -157,24 +183,398 @@ opacity: 0;
   
 
 .btn{
+    border: solid;
+    border-radius: 35px;
     padding: 1.2rem 1.8rem;
     text-transform: uppercase;
     font-size: 1.4rem;
-    color: var(--secondary-text-color);
-    background-color: var(--main-color);
+    color: var(--main-color);
+    background-color: var(--btn-color);
     align-self: end;
     margin-bottom: 2.5rem;
+}
+
+.btn:hover{
+    font-size: 1.8rem;
+    background-color: var(--secondary-btn-color);
+    transition: 0.5s;
+}
+
+/*Sobre nós*/
+
+#about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+#about-text{
+  background-image: url(../minotauro/img/sobrenosfundo.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-text-color);
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4 rem 3rem;
+
+}
+
+#about-text .section-subtitle {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: var(--primary-text-color);
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem;
+}
+
+.section {
+  color: var(--primary-text-color);
+  padding: 2rem;
+  font-size: 2rem;
+  padding: 4rem;
+}
+
+#about-text i {
+  font-size: 4rem;
+  margin-bottom: -2rem;
+  margin-left: 1rem;
+}
+
+.about-description {
+  margin-top: -6rem;
+  width: 60%;
+  padding: 5rem;
+  font-size: 1.35rem;
+}
+
+
+/*Integrantes*/
+
+#team h2{
+  font-size: 5rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem;
+}
+
+#team h2 span{
+  color: #d11507;
+}
+
+.employees{
+  min-height: 100vh;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+.employee-img{
+  size: 2rem;
+}
+
+.employee-name{
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/*Trabalho*/
+
+#work{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -13rem;
+}
+
+#work-text{
+  background-image: url("img/trabalho-banner.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-text-color);
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 3rem
+
+}
+
+#work-text .work-subtitle {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: var(--primary-text-color);
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem;
+}
+
+.work {
+  color: var(--primary-text-color);
+  padding: 2rem;
+  font-size: 3rem;
+  padding: 4rem;
+  text-align: right;
+}
+
+
+
+.work-description{
+  margin-top: -6rem;
+  max-width: 100%;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+.work-description h4{
+  margin-left: 50%;
+  text-align: right;
+}
+
+
+/*Contato e Google Maps*/
+
+#contact{
+  min-height: 50vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#contact-text{
+  background-size: cover;
+  background-position: center;
+  color: var(--secondary-text-color);
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 3rem
+
+}
+
+#contact-text .contact-subtitle {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: var(--secondary-text-color);
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.contact-description{
+  margin-top: -6rem;
+  max-width: 100%;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+.contact-description h4{
+  margin-left: 2rem;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+#contact i{
+  color: #000000;
+  margin-top: 2rem;
+
+}
+
+.contact-description h5{
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.contacts{
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.contact-description h5 span.wpp{
+  color: #25D366;
+}
+
+
+.contact-description h5 span.insta{
+  color: #833AB4;
+}
+
+.contact-description h5 span.github{
+  color: #bd2c00;
 }
 
 
 
 
 
+/*Mapa*/
+
+#maps{
+  margin-left: 50%;
+}
+
+.maps-title{
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: var(--secondary-text-color);
+  text-align: right;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem;
+}
 
 
+/*Ouvidoria*/
+
+#complaint{
+  min-width: 100vh;
+  margin-top: 4rem;
+
+}
+
+#complaint-text .complaint-subtitle{
+  font-size: 4rem;
+  color: var(--secondary-text-color);
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 3rem;
+  font-size: 6.5rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem;
+} 
+
+#complaint-text .complaint-subtitle span.compl{
+  color: #d11507;
+}
+
+.complaint{
+  font-size: 4rem;
+  text-align: center;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-bottom: 4rem;
+}
+
+.complaint span.wpp{
+  color: #25D366;
+}
+
+/* Rodapé */
+#footer{
+  margin-top: 6rem;
+  color: var(--secondary-text-colorr);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 3rem 5rem;
+}
+
+#footer i{
+  font-size: 1rem;
+  padding: .3rem;
+  color: #000000;
+}
+
+.contact-info, 
+.links-container{
+  width: 20%;
+}
+
+.footer-brand{
+  margin-bottom: 2rem;
+
+}
+
+.footer-brand h2{
+  margin-bottom: .5rem;
+  padding: 1rem;
+}
 
 
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+.contact-info p i {
+  background-color: transparent;
+  padding: 0;
+  color: var(--secondary-text-color);
+}
+
+.social-networks p {
+  margin-bottom: 1rem;
+}
+
+.networks{
+  margin-top: 2rem;
+  gap: 1rem;
+  display: flex;
+}
 
 
+#footer .networks i{
+  padding: 1rem;
+}
 
+.links-container h4{
+  text-transform: uppercase;
+  margin-bottom: 3rem ;
+}
+
+.links-container nav a{
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--secondary-text-color);
+}
+
+.phone-number{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phone-info{
+    color: var(--fourth-color);
+  
+}
 
