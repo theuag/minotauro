@@ -707,7 +707,7 @@ input[type="submit"] {
   margin-left: 1rem;
 }
 
-<<<<<<< HEAD
+
 /*Responsividade*/
 
 @media (max-width: 450px) {
@@ -767,11 +767,9 @@ input[type="submit"] {
 
 }
 
-=======.about-description {
+.about-description {
   margin-top: -6rem;
   width: 60%;
   padding: 5rem;
   font-size: 1.35rem;
 }
-
->>>>>>>7bf816dcaabbdbe22570bad8e21981b8b56b5ec2
